@@ -19,11 +19,13 @@ a RuntimeException if that is not the case.
 
 Using this is as simple as:
 
+<pre>
 @Friend(callers = ("test.TestCaller"))
 public void foo() {
 
 }
-   
+</pre>
+
 The above code means that only code from the class "test.TestCaller"
 can invoke the foo() method. If other methods try to invoke the 
 foo() method, a RuntimeException is thrown.
